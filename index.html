@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mecánica Integral Espinosa | Taller Mecánico en La Rioja</title>
+  <meta name="description" content="Taller mecánico en La Rioja Capital. Diagnóstico computarizado, mantenimiento preventivo, mecánica general, frenos y tren delantero. Transparencia total con evidencia en fotos y videos por WhatsApp y garantía por escrito. Pasaje Florida 920.">
+  <meta name="keywords" content="Mecánica Integral Espinosa, Taller mecánico La Rioja, Mecánica La Rioja, Escaneo computarizado La Rioja, Pasaje Florida 920, Frenos, Suspensión, Afinación">
+  
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mecánica Integral Espinosa - Diagnóstico Transparente y Servicio Garantizado">
+  <meta property="og:description" content="Taller mecánico de alta confianza en La Rioja Capital. Evidencia por WhatsApp, garantía por escrito y escaneo multimarca. Pasaje Florida 920.">
+  <meta property="og:image" content="assets/images/mie-cartel-fachada.jpg">
+  <meta property="og:url" content="https://maps.app.goo.gl/DfeQPR3kEsBV3Hgc9">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/mie-logo.jpg">
+
+  <!-- Google Fonts: Inter & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              lime: '#a3e635',     // Color insignia verde lima del logo MIE
+              'lime-hover': '#bef264',
+              'lime-dark': '#65a30d',
+              dark: '#080c14',       // Obsidian industrial
+              card: '#111827',
+              border: '#1f293d',
+              cyan: '#38bdf8',
+            },
+            whatsapp: {
+              DEFAULT: '#25d366',
+              hover: '#1ebd5b'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Montserrat', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="bg-brand-dark text-slate-100 antialiased selection:bg-brand-lime selection:text-slate-950">
+
+  <!-- ========================================================================= -->
+  <!-- TOP ANNOUNCEMENT BAR (UBICACIÓN & ESTADO EN VIVO) -->
+  <!-- ========================================================================= -->
+  <div class="bg-slate-950 border-b border-slate-800/60 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <!-- Ubicación rápida -->
+      <div class="flex items-center gap-4 text-slate-300">
+        <a href="https://maps.app.goo.gl/DfeQPR3kEsBV3Hgc9" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 hover:text-brand-lime transition-colors">
+          <i class="fa-solid fa-location-dot text-brand-lime"></i>
+          <span><strong>Pasaje Florida 920</strong> - La Rioja Capital</span>
+        </a>
+        <span class="hidden md:inline text-slate-700">|</span>
+        <button class="btn-copy-address hidden md:flex items-center gap-1 text-slate-400 hover:text-white transition-colors" title="Copiar dirección">
+          <i class="fa-regular fa-copy"></i>
+          <span>Copiar dir.</span>
+        </button>
+      </div>
+
+      <!-- Estado en vivo y enlace a Google Maps -->
+      <div class="flex items-center gap-3">
+        <div class="live-status-badge inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full text-xs font-medium border border-lime-500/30 bg-lime-500/10 text-lime-400">
+          <span class="status-dot w-2 h-2 rounded-full bg-lime-400 animate-pulse"></span>
+          <span class="status-text">Verificando horario del taller...</span>
+        </div>
+        <a href="https://maps.app.goo.gl/DfeQPR3kEsBV3Hgc9" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1 text-slate-400 hover:text-brand-lime transition-colors">
+          <i class="fa-brands fa-google text-brand-lime"></i>
+          <span>Ver en Maps (4.9★)</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- A. HEADER & NAVEGACIÓN -->
+  <!-- ========================================================================= -->
+  <header id="main-header" class="sticky top-0 z-50 transition-all duration-300 backdrop-blur-md bg-brand-dark/90 border-b border-slate-800/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo / Marca -->
+        <a href="#inicio" class="flex items-center gap-3 group focus:outline-none">
+          <div class="relative w-12 h-12 rounded-xl overflow-hidden border border-brand-lime/40 bg-slate-900 shadow-md flex items-center justify-center p-0.5 group-hover:border-brand-lime transition-colors">
+            <img src="assets/images/mie-logo.jpg" alt="Logo Mecánica Integral Espinosa" class="w-full h-full object-cover rounded-lg">
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-1.5">
+              <span class="font-display font-black text-2xl tracking-wider text-brand-lime leading-none">MIE</span>
+              <span class="inline-block w-1.5 h-1.5 rounded-full bg-brand-lime animate-ping"></span>
+            </div>
+            <span class="font-display text-xs sm:text-sm font-semibold tracking-wide text-slate-200 uppercase leading-tight">Mecánica Integral Espinosa</span>
+            <span class="text-[10px] text-slate-400 font-mono">La Rioja Capital</span>
+          </div>
+        </a>
+
+        <!-- Menú de Navegación Desktop -->
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="#inicio" class="nav-link text-sm font-medium text-slate-300 hover:text-brand-lime transition-colors">Inicio</a>
+          <a href="#servicios" class="nav-link text-sm font-medium text-slate-300 hover:text-brand-lime transition-colors">Servicios</a>
+          <a href="#diferenciadores" class="nav-link text-sm font-medium text-slate-300 hover:text-brand-lime transition-colors">Por qué elegirnos</a>
+          <a href="#resenas" class="nav-link text-sm font-medium text-slate-300 hover:text-brand-lime transition-colors">Reseñas</a>
+          <a href="#ubicacion" class="nav-link text-sm font-medium text-slate-300 hover:text-brand-lime transition-colors">Ubicación y Horarios</a>
+        </nav>
+
+        <!-- Botones de Acción (Header) -->
+        <div class="hidden sm:flex items-center gap-3">
+          <!-- Botón Secundario: Portal Personal -->
+          <button type="button" class="open-auth-modal flex items-center gap-2 px-3.5 py-2 text-xs font-semibold rounded-lg bg-slate-800/90 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700/80 transition-all hover:border-slate-600 focus:outline-none" title="Acceso exclusivo colaboradores y administradores">
+            <i class="fa-solid fa-user-lock text-brand-lime"></i>
+            <span>Acceso Personal</span>
+          </button>
+
+          <!-- Botón Principal (CTA): WhatsApp -->
+          <a href="https://wa.me/5493804123456?text=Hola%20Mec%C3%A1nica%20Integral%20Espinosa!%20Quiero%20agendar%20un%20turno%20o%20cotizaci%C3%B3n%20para%20mi%20veh%C3%ADculo." target="_blank" rel="noopener noreferrer" class="animate-pulse-subtle flex items-center gap-2 px-4 py-2.5 text-xs sm:text-sm font-bold rounded-lg bg-whatsapp hover:bg-whatsapp-hover text-slate-950 shadow-lg shadow-whatsapp/20 transition-all transform hover:-translate-y-0.5 focus:outline-none">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Agendar por WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Botón Menú Mobile -->
+        <div class="flex sm:hidden items-center gap-2">
+          <button type="button" class="open-auth-modal p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white" title="Acceso Colaboradores">
+            <i class="fa-solid fa-user-lock text-brand-lime"></i>
+          </button>
+          <button id="mobile-menu-btn" type="button" class="p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white focus:outline-none" aria-label="Abrir menú" aria-expanded="false">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menú Desplegable Mobile -->
+    <div id="mobile-menu" class="hidden sm:hidden border-t border-slate-800 bg-slate-950 px-4 pt-3 pb-6 space-y-3">
+      <a href="#inicio" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-brand-lime">Inicio</a>
+      <a href="#servicios" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-brand-lime">Servicios</a>
+      <a href="#diferenciadores" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-brand-lime">Por qué elegirnos</a>
+      <a href="#resenas" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-brand-lime">Reseñas de Clientes</a>
+      <a href="#ubicacion" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-slate-200 hover:bg-slate-900 hover:text-brand-lime">Ubicación y Horarios</a>
+      
+      <div class="pt-4 border-t border-slate-800/80 flex flex-col gap-2.5">
+        <a href="https://wa.me/5493804123456?text=Hola%20Mec%C3%A1nica%20Integral%20Espinosa!%20Quiero%20agendar%20un%20turno%20para%20mi%20auto." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 rounded-lg bg-whatsapp text-slate-950 font-bold text-sm shadow-md">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Agendar por WhatsApp</span>
+        </a>
+        <button type="button" class="open-auth-modal w-full flex items-center justify-center gap-2 py-2.5 rounded-lg bg-slate-900 text-slate-300 font-semibold text-xs border border-slate-800">
+          <i class="fa-solid fa-user-lock text-brand-lime"></i>
+          <span>Portal Personal / Colaboradores</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- B. HERO SECTION (SECCIÓN PRINCIPAL) -->
+  <!-- ========================================================================= -->
+  <section id="inicio" class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden bg-mesh-dark hero-mesh">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Columna Izquierda: Copy de Alta Conversión -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Badge Superior de Confianza -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-brand-lime/30 bg-brand-lime/10 text-brand-lime text-xs sm:text-sm font-semibold">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Taller Mecánico Oficial • La Rioja Capital</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-brand-lime"></span>
+            <span class="text-slate-300 font-normal">Pasaje Florida 920</span>
+          </div>
+
+          <!-- Titular Principal -->
+          <h1 class="font-display font-black text-3xl sm:text-5xl lg:text-6xl tracking-tight text-white leading-tight">
+            Tu auto en manos de expertos: <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-lime via-lime-300 to-sky-400">
+              diagnóstico honesto
+            </span> 
+            y servicio garantizado.
+          </h1>
+
+          <!-- Subtitular Explicativo -->
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            En <strong class="text-white">Mecánica Integral Espinosa (MIE)</strong> cuidamos tu seguridad y tu bolsillo. Te enviamos <span class="text-brand-lime font-medium">fotos y videos por WhatsApp</span> de cada pieza antes de cambiarla, con diagnóstico computarizado multimarca y garantía certificada por escrito.
+          </p>
+
+          <!-- Botones de Acción (CTA) -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="https://wa.me/5493804123456?text=Hola%20Mec%C3%A1nica%20Integral%20Espinosa!%20Quiero%20solicitar%20una%20cotizaci%C3%B3n%20para%20mi%20veh%C3%ADculo." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-4 rounded-xl bg-whatsapp hover:bg-whatsapp-hover text-slate-950 font-bold text-base shadow-xl shadow-whatsapp/25 transition-all transform hover:-translate-y-1">
+              <i class="fa-brands fa-whatsapp text-2xl"></i>
+              <span>Cotizar por WhatsApp</span>
+            </a>
+
+            <a href="#servicios" class="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-white font-semibold text-base border border-slate-700/80 hover:border-brand-lime/50 transition-all">
+              <i class="fa-solid fa-wrench text-brand-lime"></i>
+              <span>Ver Servicios & Precios</span>
+            </a>
+          </div>
+
+          <!-- Badges de Beneficios Clave -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-slate-800/80">
+            <div class="flex items-center gap-2 text-left">
+              <div class="w-8 h-8 rounded-lg bg-lime-500/10 border border-lime-500/20 flex items-center justify-center text-brand-lime flex-shrink-0">
+                <i class="fa-solid fa-video text-xs"></i>
+              </div>
+              <span class="text-xs text-slate-300 font-medium leading-snug">Evidencia por WhatsApp</span>
+            </div>
+            <div class="flex items-center gap-2 text-left">
+              <div class="w-8 h-8 rounded-lg bg-lime-500/10 border border-lime-500/20 flex items-center justify-center text-brand-lime flex-shrink-0">
+                <i class="fa-solid fa-file-contract text-xs"></i>
+              </div>
+              <span class="text-xs text-slate-300 font-medium leading-snug">Garantía por Escrito</span>
+            </div>
+            <div class="flex items-center gap-2 text-left">
+              <div class="w-8 h-8 rounded-lg bg-lime-500/10 border border-lime-500/20 flex items-center justify-center text-brand-lime flex-shrink-0">
+                <i class="fa-solid fa-laptop-code text-xs"></i>
+              </div>
+              <span class="text-xs text-slate-300 font-medium leading-snug">Escáner OBD-II</span>
+            </div>
+            <div class="flex items-center gap-2 text-left">
+              <div class="w-8 h-8 rounded-lg bg-lime-500/10 border border-lime-500/20 flex items-center justify-center text-brand-lime flex-shrink-0">
+                <i class="fa-solid fa-clock-rotate-left text-xs"></i>
+              </div>
+              <span class="text-xs text-slate-300 font-medium leading-snug">Entrega Puntual</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Tarjeta Visual con Fachada Real del Taller -->
+        <div class="lg:col-span-5 relative">
+          <!-- Glow exterior de acento -->
+          <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-lime/40 to-sky-500/20 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-1000"></div>
+          
+          <div class="relative rounded-2xl bg-slate-900 border border-slate-700/80 overflow-hidden shadow-2xl">
+            <!-- Imagen del cartel y fachada 3D de Mecánica Integral Espinosa -->
+            <div class="relative h-72 sm:h-96 w-full overflow-hidden bg-slate-950">
+              <img src="assets/images/mie-cartel-fachada.jpg" alt="Fachada y cartel 3D Mecánica Integral Espinosa" class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700">
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+              
+              <!-- Badge flotante de ubicación -->
+              <div class="absolute top-4 left-4 bg-slate-900/90 backdrop-blur-md border border-slate-700/80 px-3 py-1.5 rounded-lg flex items-center gap-2 shadow-lg">
+                <i class="fa-solid fa-location-dot text-brand-lime"></i>
+                <span class="text-xs font-semibold text-white">Pasaje Florida 920</span>
+              </div>
+
+              <!-- Badge de calificación Google Maps -->
+              <div class="absolute top-4 right-4 bg-slate-900/90 backdrop-blur-md border border-amber-500/40 px-3 py-1.5 rounded-lg flex items-center gap-1.5 shadow-lg">
+                <i class="fa-solid fa-star text-amber-400 text-xs"></i>
+                <span class="text-xs font-bold text-white">4.9 / 5.0</span>
+                <span class="text-[10px] text-slate-400">(Google)</span>
+              </div>
+            </div>
+
+            <!-- Datos rápidos bajo la foto -->
+            <div class="p-6 space-y-4 bg-slate-950/90 border-t border-slate-800">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h3 class="font-display font-bold text-lg text-white">Mecánica Integral Espinosa</h3>
+                  <p class="text-xs text-slate-400">Atención personalizada y asesoramiento honesto</p>
+                </div>
+                <div class="w-10 h-10 rounded-xl bg-lime-500/10 border border-brand-lime/30 flex items-center justify-center text-brand-lime">
+                  <i class="fa-solid fa-gears text-lg"></i>
+                </div>
+              </div>
+
+              <!-- Botón rápido para abrir Maps -->
+              <div class="pt-2 flex items-center gap-3">
+                <a href="https://maps.app.goo.gl/DfeQPR3kEsBV3Hgc9" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 py-2.5 px-4 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-xs font-semibold text-slate-200 hover:text-brand-lime transition-all">
+                  <i class="fa-solid fa-map-location-dot text-brand-lime"></i>
+                  <span>Ver cómo llegar en Maps</span>
+                </a>
+                <button type="button" class="btn-copy-address p-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-300 hover:text-white text-xs" title="Copiar dirección">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- C. SERVICIOS DESTACADOS -->
+  <!-- ========================================================================= -->
+  <section id="servicios" class="py-20 bg-slate-950 border-t border-slate-900 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Encabezado de Sección -->
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-lime/30 bg-brand-lime/10 text-brand-lime text-xs font-bold uppercase tracking-wider">
+          <i class="fa-solid fa-wrench"></i>
+          <span>Nuestros Servicios Especializados</span>
+        </div>
+        <h2 class="font-display font-black text-3xl sm:text-4xl text-white">
+          Soluciones integrales para todas las marcas y modelos
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Mantenimiento de rutina, reparaciones complejas y diagnóstico electrónico con instrumental calibrado de última generación en La Rioja Capital.
+        </p>
+
+        <!-- Filtros Rápidos de Servicios -->
+        <div class="flex flex-wrap items-center justify-center gap-2 pt-4">
+          <button type="button" class="service-filter-btn active px-4 py-2 rounded-lg text-xs font-bold transition-all bg-brand-lime text-slate-950 shadow-md" data-filter="all">
+            Todos los Servicios
+          </button>
+          <button type="button" class="service-filter-btn px-4 py-2 rounded-lg text-xs font-semibold transition-all bg-slate-800/80 text-slate-300 hover:bg-slate-700" data-filter="preventivo">
+            Mantenimiento Preventivo
+          </button>
+          <button type="button" class="service-filter-btn px-4 py-2 rounded-lg text-xs font-semibold transition-all bg-slate-800/80 text-slate-300 hover:bg-slate-700" data-filter="mecanica">
+            Mecánica & Motor
+          </button>
+          <button type="button" class="service-filter-btn px-4 py-2 rounded-lg text-xs font-semibold transition-all bg-slate-800/80 text-slate-300 hover:bg-slate-700" data-filter="electronica">
+            Diagnóstico & Electricidad
+          </button>
+        </div>
+      </div>
+
+      <!-- Cuadrícula de Tarjetas de Servicios -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Tarjeta 1: Mantenimiento Preventivo -->
+        <div class="service-card-item glass-card rounded-2xl p-7 flex flex-col justify-between" data-category="preventivo">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-lime-500/10 border border-brand-lime/30 flex items-center justify-center text-brand-lime text-2xl">
+              <i class="fa-solid fa-oil-can"></i>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-brand-lime uppercase tracking-wider">Service Integral</span>
+              <h3 class="font-display font-bold text-xl text-white mt-1">Mantenimiento Preventivo</h3>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Cuidá la vida útil de tu motor y evitá gastos innecesarios con fluidos y filtros de primeras marcas certificadas.
+            </p>
+            <ul class="space-y-2.5 pt-2 text-xs sm:text-sm text-slate-300">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Cambio de aceite sintético / semisintético</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Filtros de aceite, aire, habitáculo y combustible</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Control de 30 puntos críticos de seguridad</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Revisión y reposición de fluidos y refrigerante</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-800">
+            <button type="button" class="btn-direct-whatsapp w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-slate-800/80 hover:bg-whatsapp hover:text-slate-950 text-white font-semibold text-xs sm:text-sm transition-all border border-slate-700/80 hover:border-whatsapp" data-service="Mantenimiento Preventivo y Cambio de Aceite">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Consultar por WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Mecánica General & Motor -->
+        <div class="service-card-item glass-card rounded-2xl p-7 flex flex-col justify-between" data-category="mecanica">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-lime-500/10 border border-brand-lime/30 flex items-center justify-center text-brand-lime text-2xl">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-brand-lime uppercase tracking-wider">Mecánica Pesada & Liviana</span>
+              <h3 class="font-display font-bold text-xl text-white mt-1">Mecánica General & Motor</h3>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Reparación integral de componentes motrices con precisión milimétrica, torquímetros calibrados y garantía por escrito.
+            </p>
+            <ul class="space-y-2.5 pt-2 text-xs sm:text-sm text-slate-300">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Kit de distribución (correa/cadena y bomba de agua)</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Embrague: placa, disco, crapodina y volante</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Tapa de cilindros, juntas y rectificación de motor</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Circuitos de refrigeración, radiador y termostatos</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-800">
+            <button type="button" class="btn-direct-whatsapp w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-slate-800/80 hover:bg-whatsapp hover:text-slate-950 text-white font-semibold text-xs sm:text-sm transition-all border border-slate-700/80 hover:border-whatsapp" data-service="Mecánica General y Motor">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Consultar por WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Diagnóstico Computarizado & Inyección -->
+        <div class="service-card-item glass-card rounded-2xl p-7 flex flex-col justify-between" data-category="electronica">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-lime-500/10 border border-brand-lime/30 flex items-center justify-center text-brand-lime text-2xl">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-brand-lime uppercase tracking-wider">Electrónica Automotriz</span>
+              <h3 class="font-display font-bold text-xl text-white mt-1">Diagnóstico Computarizado</h3>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Escaneo OBD-II multimarca para identificar fallas en sensores, inyección electrónica, ABS y borrado de Check Engine sin conjeturas.
+            </p>
+            <ul class="space-y-2.5 pt-2 text-xs sm:text-sm text-slate-300">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Lectura de códigos de error y reseteo de Check Engine</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Prueba y limpieza de inyectores por ultrasonido</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Diagnóstico de sonda lambda, caudalímetro y MAF</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Calibración de cuerpos mariposa y aceleración electrónica</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-800">
+            <button type="button" class="btn-direct-whatsapp w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-slate-800/80 hover:bg-whatsapp hover:text-slate-950 text-white font-semibold text-xs sm:text-sm transition-all border border-slate-700/80 hover:border-whatsapp" data-service="Diagnóstico Computarizado y Escáner">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Consultar por WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4: Frenos & Tren Delantero -->
+        <div class="service-card-item glass-card rounded-2xl p-7 flex flex-col justify-between" data-category="mecanica">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-lime-500/10 border border-brand-lime/30 flex items-center justify-center text-brand-lime text-2xl">
+              <i class="fa-solid fa-compact-disc"></i>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-brand-lime uppercase tracking-wider">Seguridad Activa</span>
+              <h3 class="font-display font-bold text-xl text-white mt-1">Frenos & Tren Delantero</h3>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Mantené el control total de tu vehículo ante cualquier frenada de emergencia o baches en el camino riojano.
+            </p>
+            <ul class="space-y-2.5 pt-2 text-xs sm:text-sm text-slate-300">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Pastillas, discos ventilados y cintas de freno</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Líquido de freno DOT 4/5.1 y purga electrónica</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Amortiguadores, espirales, cazoletas y bujes</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Extremos, rótulas y cremalleras de dirección hidráulica</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-800">
+            <button type="button" class="btn-direct-whatsapp w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-slate-800/80 hover:bg-whatsapp hover:text-slate-950 text-white font-semibold text-xs sm:text-sm transition-all border border-slate-700/80 hover:border-whatsapp" data-service="Frenos y Tren Delantero">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Consultar por WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tarjeta 5: Electricidad & Climatización A/C -->
+        <div class="service-card-item glass-card rounded-2xl p-7 flex flex-col justify-between" data-category="electronica">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-lime-500/10 border border-brand-lime/30 flex items-center justify-center text-brand-lime text-2xl">
+              <i class="fa-solid fa-snowflake"></i>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-brand-lime uppercase tracking-wider">Confort & Baterías</span>
+              <h3 class="font-display font-bold text-xl text-white mt-1">Climatización A/C & Electricidad</h3>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Carga y prueba de fugas de aire acondicionado para soportar el calor de La Rioja, junto al sistema eléctrico completo.
+            </p>
+            <ul class="space-y-2.5 pt-2 text-xs sm:text-sm text-slate-300">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Carga de gas ecológico R134a y prueba de vacío</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Detección de fugas con contraste ultravioleta</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Diagnóstico y reemplazo de baterías con garantía</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Reparación de alternadores y motores de arranque</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-800">
+            <button type="button" class="btn-direct-whatsapp w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-slate-800/80 hover:bg-whatsapp hover:text-slate-950 text-white font-semibold text-xs sm:text-sm transition-all border border-slate-700/80 hover:border-whatsapp" data-service="Aire Acondicionado y Electricidad Automotor">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Consultar por WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tarjeta 6: Chequeo Pre-VTV / RTO -->
+        <div class="service-card-item glass-card rounded-2xl p-7 flex flex-col justify-between" data-category="preventivo">
+          <div class="space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-lime-500/10 border border-brand-lime/30 flex items-center justify-center text-brand-lime text-2xl">
+              <i class="fa-solid fa-clipboard-check"></i>
+            </div>
+            <div>
+              <span class="text-xs font-semibold text-brand-lime uppercase tracking-wider">Aprobación Garantizada</span>
+              <h3 class="font-display font-bold text-xl text-white mt-1">Revisión Pre-VTV / RTO</h3>
+            </div>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Inspección técnica integral simulada para que tu vehículo supere la Revisión Técnica Obligatoria sin rechazos ni demoras.
+            </p>
+            <ul class="space-y-2.5 pt-2 text-xs sm:text-sm text-slate-300">
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Eficacia y desequilibrio de frenada en las 4 ruedas</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Juegos y holguras en rótulas, extremos y cremallera</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Luces reglamentarias, balizas y alineación de faros</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fa-solid fa-check text-brand-lime"></i>
+                <span>Emisión de gases y estado de silenciadores</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-800">
+            <button type="button" class="btn-direct-whatsapp w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-slate-800/80 hover:bg-whatsapp hover:text-slate-950 text-white font-semibold text-xs sm:text-sm transition-all border border-slate-700/80 hover:border-whatsapp" data-service="Chequeo Pre-VTV / RTO">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>Consultar por WhatsApp</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Banner de Escaneo Express -->
+      <div class="mt-14 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border border-brand-lime/30 p-8 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-5">
+          <div class="w-16 h-16 rounded-2xl bg-brand-lime/10 border border-brand-lime/40 flex items-center justify-center text-brand-lime text-3xl flex-shrink-0">
+            <i class="fa-solid fa-car-on"></i>
+          </div>
+          <div>
+            <h4 class="font-display font-bold text-xl text-white">¿Tenés una luz de falla o ruido extraño?</h4>
+            <p class="text-sm text-slate-300">Traé tu auto a Pasaje Florida 920 para un escaneo computarizado rápido y salí con un presupuesto claro.</p>
+          </div>
+        </div>
+        <a href="#contacto-turno" class="px-6 py-3.5 rounded-xl bg-brand-lime hover:bg-brand-lime-hover text-slate-950 font-bold text-sm shadow-lg whitespace-nowrap transition-all">
+          Reservar Diagnóstico en el Taller
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- D. DIFERENCIADORES Y CONFIANZA -->
+  <!-- ========================================================================= -->
+  <section id="diferenciadores" class="py-20 bg-brand-dark relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-lime/30 bg-brand-lime/10 text-brand-lime text-xs font-bold uppercase tracking-wider">
+          <i class="fa-solid fa-award"></i>
+          <span>La Diferencia MIE</span>
+        </div>
+        <h2 class="font-display font-black text-3xl sm:text-4xl text-white">
+          Por qué los conductores de La Rioja eligen Mecánica Integral Espinosa
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Desterramos los vicios de los talleres tradicionales: acá sabés exactamente qué se le hace a tu auto, por qué y con qué costo antes de iniciar.
+        </p>
+      </div>
+
+      <!-- 4 Pilares -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Pilar 1 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 border border-slate-800 hover:border-brand-lime/40 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-lime-500/10 border border-brand-lime/30 flex items-center justify-center text-brand-lime text-xl">
+            <i class="fa-solid fa-camera-rotate"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white">Transparencia Total</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Te enviamos fotos y videos en tiempo real por WhatsApp antes de reemplazar cualquier repuesto. Vos aprobás con total certeza y sin sorpresas finales.
+          </p>
+        </div>
+
+        <!-- Pilar 2 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 border border-slate-800 hover:border-brand-lime/40 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-lime-500/10 border border-brand-lime/30 flex items-center justify-center text-brand-lime text-xl">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white">Garantía por Escrito</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Cada trabajo mecánico y repuesto colocado cuenta con respaldo documentado y certificado por escrito para tu total tranquilidad.
+          </p>
+        </div>
+
+        <!-- Pilar 3 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 border border-slate-800 hover:border-brand-lime/40 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-lime-500/10 border border-brand-lime/30 flex items-center justify-center text-brand-lime text-xl">
+            <i class="fa-solid fa-laptop-medical"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white">Tecnología de Diagnóstico</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Equipos de escaneo digital multimarca nacional e importada. Detectamos fallas ocultas en sensores e inyección sin cambiar piezas al azar.
+          </p>
+        </div>
+
+        <!-- Pilar 4 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 border border-slate-800 hover:border-brand-lime/40 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-lime-500/10 border border-brand-lime/30 flex items-center justify-center text-brand-lime text-xl">
+            <i class="fa-solid fa-user-check"></i>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white">Trato Directo & Puntualidad</h3>
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Hablás directamente con el mecánico a cargo de tu auto. Cumplimos con las fechas de entrega pactadas para no alterar tu rutina.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Estadísticas de Confianza -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+          <div class="text-3xl sm:text-4xl font-black text-brand-lime font-display">+3.500</div>
+          <div class="text-xs sm:text-sm text-slate-300 mt-1 font-medium">Vehículos Atendidos</div>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+          <div class="text-3xl sm:text-4xl font-black text-amber-400 font-display flex items-center justify-center gap-1">
+            <span>4.9</span>
+            <i class="fa-solid fa-star text-2xl"></i>
+          </div>
+          <div class="text-xs sm:text-sm text-slate-300 mt-1 font-medium">Google Maps Rating</div>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+          <div class="text-3xl sm:text-4xl font-black text-brand-lime font-display">100%</div>
+          <div class="text-xs sm:text-sm text-slate-300 mt-1 font-medium">Garantía Certificada</div>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800">
+          <div class="text-3xl sm:text-4xl font-black text-sky-400 font-display">15+</div>
+          <div class="text-xs sm:text-sm text-slate-300 mt-1 font-medium">Años de Trayectoria</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- E. PRUEBA SOCIAL Y RESEÑAS (GOOGLE REVIEWS) -->
+  <!-- ========================================================================= -->
+  <section id="resenas" class="py-20 bg-slate-950 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Cabecera de Reseñas -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-14">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-bold uppercase tracking-wider mb-2">
+            <i class="fa-brands fa-google"></i>
+            <span>Google Reviews Verificadas</span>
+          </div>
+          <h2 class="font-display font-black text-3xl sm:text-4xl text-white">
+            La opinión de quienes confían en nuestro taller
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-1">
+            Testimonios reales extraídos de clientes de La Rioja Capital.
+          </p>
+        </div>
+
+        <!-- Badge Score -->
+        <a href="https://maps.app.goo.gl/DfeQPR3kEsBV3Hgc9" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 rounded-2xl bg-slate-900 border border-slate-800 hover:border-amber-400/50 transition-all group">
+          <div class="w-12 h-12 rounded-xl bg-white flex items-center justify-center shadow">
+            <svg class="w-7 h-7" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-1 text-amber-400">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="font-bold text-white text-base ml-1">4.9</span>
+            </div>
+            <div class="text-xs text-slate-400 group-hover:text-brand-lime flex items-center gap-1 transition-colors">
+              <span>Ver todas en Google Maps</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Tarjetas de Reseñas -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Reseña 1 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 border border-slate-800 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-lime to-sky-400 flex items-center justify-center font-bold text-slate-950 text-sm">
+                  CM
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Carlos Mercado</h4>
+                  <span class="text-[11px] text-slate-400">Cliente verificado • Ford Focus</span>
+                </div>
+              </div>
+              <i class="fa-brands fa-google text-slate-500"></i>
+            </div>
+            <div class="flex items-center text-amber-400 text-xs gap-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="text-slate-400 ml-2 text-[11px]">Hace 2 semanas</span>
+            </div>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              "Excelente atención de Espinosa y su equipo. Me mandaron videos de los frenos y embrague antes de desarmar y cambiar piezas. Muy honestos con el presupuesto y el auto quedó como nuevo. Es mi taller de cabecera en La Rioja."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800/80 text-[11px] text-brand-lime flex items-center gap-1">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Servicio: Embrague y Frenos completos</span>
+          </div>
+        </div>
+
+        <!-- Reseña 2 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 border border-slate-800 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-sky-400 to-indigo-500 flex items-center justify-center font-bold text-white text-sm">
+                  LF
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Luciana Fernández</h4>
+                  <span class="text-[11px] text-slate-400">Cliente verificada • VW Gol Trend</span>
+                </div>
+              </div>
+              <i class="fa-brands fa-google text-slate-500"></i>
+            </div>
+            <div class="flex items-center text-amber-400 text-xs gap-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="text-slate-400 ml-2 text-[11px]">Hace 1 mes</span>
+            </div>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              "Tenía una falla intermitente en la luz del motor que en dos talleres anteriores no supieron resolver. En MIE lo conectaron al escáner computarizado y en 20 minutos me dijeron exactamente qué sensor era. Ahorré tiempo y plata."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800/80 text-[11px] text-brand-lime flex items-center gap-1">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Servicio: Diagnóstico OBD-II e Inyección</span>
+          </div>
+        </div>
+
+        <!-- Reseña 3 -->
+        <div class="glass-card rounded-2xl p-6 space-y-4 border border-slate-800 flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-400 to-red-500 flex items-center justify-center font-bold text-slate-950 text-sm">
+                  MR
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-sm">Marcos Romero</h4>
+                  <span class="text-[11px] text-slate-400">Cliente verificado • Toyota Hilux</span>
+                </div>
+              </div>
+              <i class="fa-brands fa-google text-slate-500"></i>
+            </div>
+            <div class="flex items-center text-amber-400 text-xs gap-1">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span class="text-slate-400 ml-2 text-[11px]">Hace 3 meses</span>
+            </div>
+            <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+              "Llevé la camioneta para distribución, suspensión y chequeo antes de la RTO. Cumplieron con el horario exacto pactado y la técnica pasó sin ningún problema. Me dieron la factura y la garantía escrita en mano."
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800/80 text-[11px] text-brand-lime flex items-center gap-1">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Servicio: Distribución y Tren Delantero</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Botón directo a dejar o ver reseñas -->
+      <div class="text-center mt-10">
+        <a href="https://maps.app.goo.gl/DfeQPR3kEsBV3Hgc9" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 hover:text-brand-lime text-xs sm:text-sm font-semibold transition-all">
+          <i class="fa-brands fa-google text-brand-lime"></i>
+          <span>Ver ubicación y opiniones en Google Maps Oficial</span>
+          <i class="fa-solid fa-chevron-right text-xs"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- F. UBICACIÓN, HORARIOS Y CONTACTO EXPRESS -->
+  <!-- ========================================================================= -->
+  <section id="ubicacion" class="py-20 bg-brand-dark relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Título de Sección -->
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brand-lime/30 bg-brand-lime/10 text-brand-lime text-xs font-bold uppercase tracking-wider">
+          <i class="fa-solid fa-location-crosshairs"></i>
+          <span>Encontranos Fácilmente</span>
+        </div>
+        <h2 class="font-display font-black text-3xl sm:text-4xl text-white">
+          Ubicación, Horarios y Turnos en La Rioja Capital
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base">
+          Estamos ubicados en Pasaje Florida 920. Vení directamente o coordiná tu visita por WhatsApp para una recepción ágil sin esperas.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Columna 1: Tarjeta de Contacto & Horarios (5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Tarjeta de Horarios con Semáforo Inteligente -->
+          <div class="glass-card rounded-2xl p-6 border border-slate-800 space-y-4">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <div class="flex items-center gap-2.5">
+                <i class="fa-regular fa-clock text-brand-lime text-lg"></i>
+                <h3 class="font-display font-bold text-white text-base">Horarios de Atención</h3>
+              </div>
+              
+              <!-- Semáforo Dinámico -->
+              <div class="live-status-badge inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold border border-lime-500/30 bg-lime-500/10 text-lime-400">
+                <span class="status-dot w-2 h-2 rounded-full bg-lime-400"></span>
+                <span class="status-text">Calculando...</span>
+              </div>
+            </div>
+
+            <div class="space-y-3 text-xs sm:text-sm">
+              <div class="flex justify-between items-center py-1 border-b border-slate-800/50">
+                <span class="text-slate-300 font-medium">Lunes a Viernes:</span>
+                <span class="text-white font-mono font-semibold">08:30 a 13:00 hs &bull; 16:30 a 20:30 hs</span>
+              </div>
+              <div class="flex justify-between items-center py-1 border-b border-slate-800/50">
+                <span class="text-slate-300 font-medium">Sábados:</span>
+                <span class="text-white font-mono font-semibold">08:30 a 13:00 hs</span>
+              </div>
+              <div class="flex justify-between items-center py-1">
+                <span class="text-slate-400 font-medium">Domingos:</span>
+                <span class="text-amber-400 font-medium">Cerrado (Urgencias WhatsApp)</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta de Dirección & Canales Directos -->
+          <div class="glass-card rounded-2xl p-6 border border-slate-800 space-y-4">
+            <h3 class="font-display font-bold text-white text-base flex items-center gap-2">
+              <i class="fa-solid fa-map-pin text-brand-lime"></i>
+              <span>Dirección y Teléfono</span>
+            </h3>
+
+            <div class="space-y-3 text-sm text-slate-300">
+              <!-- Dirección -->
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-building text-slate-400 mt-1"></i>
+                <div>
+                  <strong class="text-white">Pasaje Florida 920</strong><br>
+                  <span class="text-slate-400 text-xs">La Rioja Capital, Provincia de La Rioja, Argentina</span>
+                </div>
+              </div>
+
+              <!-- Coordenadas GPS -->
+              <div class="flex items-center gap-3 text-xs text-slate-400 font-mono">
+                <i class="fa-solid fa-compass text-slate-500"></i>
+                <span>GPS: -29.407233, -66.861979</span>
+              </div>
+
+              <!-- Teléfono -->
+              <div class="flex items-center gap-3 pt-2">
+                <i class="fa-solid fa-phone text-brand-lime"></i>
+                <div>
+                  <span class="text-xs text-slate-400 block">Llamadas y WhatsApp:</span>
+                  <a href="tel:+5493804123456" class="text-white font-bold hover:text-brand-lime transition-colors">+54 9 380 412-3456</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botones de Acción de Mapa -->
+            <div class="pt-3 flex items-center gap-2">
+              <a href="https://maps.app.goo.gl/DfeQPR3kEsBV3Hgc9" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs transition-colors border border-slate-700">
+                <i class="fa-solid fa-diamond-turn-right text-brand-lime"></i>
+                <span>Cómo llegar (Google Maps)</span>
+              </a>
+              <button type="button" class="btn-copy-address px-3.5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 text-xs font-medium" title="Copiar dirección exacta">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Columna 2: Formulario de Turno Express / Cotización (7 cols) -->
+        <div class="lg:col-span-7" id="contacto-turno">
+          <div class="glass-card rounded-2xl p-6 sm:p-8 border border-brand-lime/20 shadow-2xl relative">
+            
+            <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-800">
+              <div>
+                <h3 class="font-display font-bold text-xl sm:text-2xl text-white">Solicitar Turno o Cotización</h3>
+                <p class="text-xs sm:text-sm text-slate-400">Completá los datos y te enviamos la confirmación por WhatsApp en minutos.</p>
+              </div>
+              <div class="w-12 h-12 rounded-xl bg-whatsapp/10 border border-whatsapp/30 flex items-center justify-center text-whatsapp text-2xl">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+            </div>
+
+            <form id="quote-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Nombre -->
+                <div>
+                  <label for="client-name" class="block text-xs font-semibold text-slate-300 mb-1.5">Tu Nombre y Apellido *</label>
+                  <input type="text" id="client-name" required placeholder="Ej: Juan Pérez" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700/80 text-white text-sm focus:border-brand-lime placeholder-slate-500">
+                </div>
+
+                <!-- Teléfono / WhatsApp -->
+                <div>
+                  <label for="client-phone" class="block text-xs font-semibold text-slate-300 mb-1.5">Teléfono / WhatsApp *</label>
+                  <input type="tel" id="client-phone" required placeholder="Ej: 380 4123456" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700/80 text-white text-sm focus:border-brand-lime placeholder-slate-500">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Vehículo -->
+                <div>
+                  <label for="client-vehicle" class="block text-xs font-semibold text-slate-300 mb-1.5">Marca, Modelo y Año *</label>
+                  <input type="text" id="client-vehicle" required placeholder="Ej: Toyota Corolla 2018" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700/80 text-white text-sm focus:border-brand-lime placeholder-slate-500">
+                </div>
+
+                <!-- Servicio Requerido -->
+                <div>
+                  <label for="client-service" class="block text-xs font-semibold text-slate-300 mb-1.5">Servicio Principal</label>
+                  <select id="client-service" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700/80 text-white text-sm focus:border-brand-lime">
+                    <option value="Mantenimiento Preventivo (Aceite y Filtros)">Mantenimiento Preventivo (Aceite y Filtros)</option>
+                    <option value="Diagnóstico Computarizado / Check Engine">Diagnóstico Computarizado / Check Engine</option>
+                    <option value="Frenos y Tren Delantero">Frenos y Tren Delantero</option>
+                    <option value="Embrague y Distribución">Embrague y Distribución</option>
+                    <option value="Aire Acondicionado y Climatización">Aire Acondicionado y Climatización</option>
+                    <option value="Inspección Pre-VTV / RTO">Inspección Pre-VTV / RTO</option>
+                    <option value="Mecánica General / Otro problema">Mecánica General / Otro problema</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Detalle o Falla -->
+              <div>
+                <label for="client-notes" class="block text-xs font-semibold text-slate-300 mb-1.5">Describí qué síntoma o falla tiene el auto (opcional)</label>
+                <textarea id="client-notes" rows="3" placeholder="Ej: Hace un ruido al frenar, o se encendió el testigo del motor en el tablero..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700/80 text-white text-sm focus:border-brand-lime placeholder-slate-500 resize-none"></textarea>
+              </div>
+
+              <!-- Botón de Envío -->
+              <div class="pt-2">
+                <button type="submit" class="w-full flex items-center justify-center gap-3 py-4 rounded-xl bg-whatsapp hover:bg-whatsapp-hover text-slate-950 font-bold text-base shadow-xl shadow-whatsapp/20 transition-all transform hover:-translate-y-0.5">
+                  <i class="fa-brands fa-whatsapp text-2xl"></i>
+                  <span>Enviar Turno por WhatsApp a Mecánica Espinosa</span>
+                </button>
+                <p class="text-center text-[11px] text-slate-500 mt-2">
+                  <i class="fa-solid fa-lock text-slate-600 mr-1"></i>
+                  Respuesta inmediata en horario comercial. Sin compromisos ni cargos ocultos.
+                </p>
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mapa Interactivo Integrado de Google Maps (Pasaje Florida 920) -->
+      <div class="mt-12 rounded-2xl overflow-hidden border border-slate-800 shadow-2xl relative">
+        <div class="bg-slate-900 px-6 py-3 flex items-center justify-between border-b border-slate-800">
+          <div class="flex items-center gap-2 text-xs sm:text-sm text-slate-300">
+            <i class="fa-solid fa-map-location-dot text-brand-lime"></i>
+            <span>Google Maps: <strong>Pasaje Florida 920, La Rioja</strong></span>
+          </div>
+          <a href="https://maps.app.goo.gl/DfeQPR3kEsBV3Hgc9" target="_blank" rel="noopener noreferrer" class="text-xs text-brand-lime hover:underline flex items-center gap-1 font-semibold">
+            <span>Abrir app de Google Maps</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+          </a>
+        </div>
+        
+        <!-- iFrame con vista de Google Maps del Pasaje Florida 920 (-29.4072331,-66.8619793) -->
+        <div class="h-80 sm:h-96 w-full bg-slate-950">
+          <iframe 
+            src="https://maps.google.com/maps?q=-29.4072331,-66.8619793&hl=es&z=17&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0; filter: contrast(1.1) brightness(0.9);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación Mecánica Integral Espinosa en Google Maps">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER -->
+  <!-- ========================================================================= -->
+  <footer class="bg-slate-950 border-t border-slate-800/80 pt-16 pb-12 text-slate-400 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Col 1: Marca & Resumen -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/images/mie-logo.jpg" alt="MIE Logo" class="w-10 h-10 rounded-lg object-cover border border-brand-lime/40">
+            <div>
+              <span class="font-display font-black text-xl text-brand-lime tracking-wider block">MIE</span>
+              <span class="font-display text-xs font-bold text-white uppercase">Mecánica Integral Espinosa</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Taller mecánico de alta precisión en La Rioja Capital. Mantenimiento preventivo, diagnóstico computarizado y mecánica integral con evidencia en fotos/videos y garantía por escrito.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://maps.app.goo.gl/DfeQPR3kEsBV3Hgc9" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-lime hover:border-brand-lime transition-colors" title="Google Maps">
+              <i class="fa-brands fa-google text-xs"></i>
+            </a>
+            <a href="https://wa.me/5493804123456" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-whatsapp hover:border-whatsapp transition-colors" title="WhatsApp">
+              <i class="fa-brands fa-whatsapp text-xs"></i>
+            </a>
+            <button type="button" class="open-auth-modal w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-lime hover:border-brand-lime transition-colors" title="Portal Interno">
+              <i class="fa-solid fa-lock text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Col 2: Navegación Rápida -->
+        <div class="space-y-3">
+          <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider">Navegación</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#inicio" class="hover:text-brand-lime transition-colors">Inicio</a></li>
+            <li><a href="#servicios" class="hover:text-brand-lime transition-colors">Servicios Mecánicos</a></li>
+            <li><a href="#diferenciadores" class="hover:text-brand-lime transition-colors">Por qué elegir MIE</a></li>
+            <li><a href="#resenas" class="hover:text-brand-lime transition-colors">Reseñas en Google Maps</a></li>
+            <li><a href="#ubicacion" class="hover:text-brand-lime transition-colors">Ubicación y Horarios</a></li>
+            <li><button type="button" class="open-auth-modal text-left hover:text-brand-lime transition-colors flex items-center gap-1.5">
+              <i class="fa-solid fa-user-lock text-brand-lime text-[10px]"></i>
+              <span>Acceso Personal / Colaboradores</span>
+            </button></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Servicios Principales -->
+        <div class="space-y-3">
+          <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider">Especialidades</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#servicios" class="hover:text-brand-lime transition-colors">Afinación & Cambio de Aceite</a></li>
+            <li><a href="#servicios" class="hover:text-brand-lime transition-colors">Escáner Check Engine OBD-II</a></li>
+            <li><a href="#servicios" class="hover:text-brand-lime transition-colors">Frenos ABS & Convencionales</a></li>
+            <li><a href="#servicios" class="hover:text-brand-lime transition-colors">Kit de Distribución & Bomba de Agua</a></li>
+            <li><a href="#servicios" class="hover:text-brand-lime transition-colors">Carga de Aire Acondicionado R134a</a></li>
+            <li><a href="#servicios" class="hover:text-brand-lime transition-colors">Inspección Técnica Pre-RTO</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contacto Rápido -->
+        <div class="space-y-3">
+          <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider">Taller La Rioja</h4>
+          <div class="space-y-2 text-xs">
+            <p class="flex items-start gap-2">
+              <i class="fa-solid fa-location-dot text-brand-lime mt-0.5"></i>
+              <span>Pasaje Florida 920, La Rioja Capital</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-whatsapp"></i>
+              <span>+54 9 380 412-3456</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fa-solid fa-envelope text-slate-400"></i>
+              <span>contacto@mecanicaespinosa.com</span>
+            </p>
+            <div class="pt-2">
+              <span class="inline-block px-2.5 py-1 rounded bg-slate-900 border border-slate-800 text-[11px] text-slate-300">
+                Atención Lunes a Sábados
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Creditos -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <p>&copy; 2026 Mecánica Integral Espinosa (MIE). Todos los derechos reservados.</p>
+        <div class="flex items-center gap-4">
+          <a href="https://maps.app.goo.gl/DfeQPR3kEsBV3Hgc9" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300">Google Maps</a>
+          <span>&bull;</span>
+          <button type="button" class="open-auth-modal hover:text-slate-300">Portal Taller</button>
+          <span>&bull;</span>
+          <span>La Rioja, Argentina</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- G. MODAL / PANTALLA DE INGRESO INTERNO (ADMIN & COLABORADORES) -->
+  <!-- ========================================================================= -->
+  <div id="auth-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content relative w-full max-w-md rounded-2xl bg-slate-900 border border-slate-700/80 shadow-2xl p-6 sm:p-8 overflow-hidden">
+      
+      <!-- Botón de Cierre -->
+      <button type="button" class="close-auth-modal absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white flex items-center justify-center transition-colors focus:outline-none" aria-label="Cerrar ventana">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <!-- Encabezado del Modal -->
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-12 h-12 rounded-xl bg-lime-500/10 border border-brand-lime/30 flex items-center justify-center text-brand-lime text-2xl flex-shrink-0">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+        </div>
+        <div>
+          <span class="text-[10px] font-bold tracking-wider text-brand-lime uppercase">Sistema de Gestión MIE</span>
+          <h3 id="modal-title" class="font-display font-black text-xl text-white">Portal Colaboradores</h3>
+        </div>
+      </div>
+
+      <!-- Selector de Rol (Administrador / Mecánico) -->
+      <div class="grid grid-cols-2 gap-2 p-1.5 bg-slate-950 rounded-xl border border-slate-800 mb-6">
+        <button type="button" class="role-tab active px-3 py-2 rounded-lg text-xs font-bold transition-all bg-brand-lime text-slate-950" data-role="admin">
+          <i class="fa-solid fa-user-tie mr-1.5"></i>
+          <span>Administración</span>
+        </button>
+        <button type="button" class="role-tab px-3 py-2 rounded-lg text-xs font-medium text-slate-400 hover:text-white transition-all" data-role="mecanico">
+          <i class="fa-solid fa-wrench mr-1.5"></i>
+          <span>Mecánico / Taller</span>
+        </button>
+      </div>
+
+      <!-- Formulario de Inicio de Sesión -->
+      <form id="auth-form" class="space-y-4">
+        <input type="hidden" id="auth-role-input" value="admin">
+
+        <!-- Campo Usuario / Correo -->
+        <div>
+          <label id="auth-user-label" for="auth-user" class="block text-xs font-semibold text-slate-300 mb-1.5">
+            Correo Electrónico Administrador
+          </label>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-500 text-sm">
+              <i class="fa-regular fa-envelope"></i>
+            </span>
+            <input type="text" id="auth-user" required placeholder="admin@mecanicaespinosa.com" class="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:border-brand-lime placeholder-slate-600">
+          </div>
+        </div>
+
+        <!-- Campo Contraseña -->
+        <div>
+          <div class="flex justify-between items-center mb-1.5">
+            <label for="auth-password" class="block text-xs font-semibold text-slate-300">Contraseña</label>
+            <a href="#" onclick="alert('Por seguridad interna, comunicate con la administración central de Mecánica Espinosa en Pasaje Florida 920.'); return false;" class="text-[11px] text-brand-lime hover:underline">¿Olvidaste tu clave?</a>
+          </div>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3.5 text-slate-500 text-sm">
+              <i class="fa-solid fa-key"></i>
+            </span>
+            <input type="password" id="auth-password" required placeholder="••••••••••••" class="w-full pl-10 pr-10 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:border-brand-lime placeholder-slate-600">
+            <button type="button" id="toggle-password-btn" class="absolute inset-y-0 right-0 flex items-center pr-3.5 text-slate-500 hover:text-slate-300 text-sm focus:outline-none" aria-label="Mostrar contraseña">
+              <i class="fa-regular fa-eye"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Recordar equipo -->
+        <div class="flex items-center gap-2 pt-1">
+          <input type="checkbox" id="auth-remember" class="rounded bg-slate-950 border-slate-800 text-brand-lime focus:ring-brand-lime">
+          <label for="auth-remember" class="text-xs text-slate-400 select-none">Recordar sesión en esta terminal de trabajo</label>
+        </div>
+
+        <!-- Botón de Ingreso -->
+        <div class="pt-2">
+          <button type="submit" class="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-brand-lime hover:bg-brand-lime-hover text-slate-950 font-bold text-sm shadow-lg shadow-brand-lime/20 transition-all">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            <span>Iniciar Sesión en el Sistema del Taller</span>
+          </button>
+        </div>
+
+        <p class="text-center text-[10px] text-slate-500 pt-2">
+          Acceso restringido exclusivamente para personal activo de Mecánica Integral Espinosa.
+        </p>
+      </form>
+
+      <!-- Dashboard Preview Simulado (Se muestra al autenticar exitosamente) -->
+      <div id="portal-dashboard-preview" class="hidden space-y-4">
+        <div class="p-4 rounded-xl bg-slate-950 border border-brand-lime/30 text-center space-y-2">
+          <div class="w-10 h-10 rounded-full bg-lime-500/20 text-brand-lime mx-auto flex items-center justify-center text-lg">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <h4 class="font-bold text-white text-base">¡Sesión Iniciada con Éxito!</h4>
+          <p class="text-xs text-slate-300">Rol activo: <span id="preview-user-role" class="text-brand-lime font-bold">Administrador</span></p>
+        </div>
+
+        <div class="space-y-2">
+          <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Órdenes de Trabajo Activas (Hoy)</div>
+          
+          <div class="p-3 rounded-lg bg-slate-950 border border-slate-800 text-xs flex justify-between items-center">
+            <div>
+              <strong class="text-white">Toyota Hilux - #OT-492</strong>
+              <span class="block text-[11px] text-slate-400">Distribución & Bomba de agua</span>
+            </div>
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-300">En Reparación</span>
+          </div>
+
+          <div class="p-3 rounded-lg bg-slate-950 border border-slate-800 text-xs flex justify-between items-center">
+            <div>
+              <strong class="text-white">VW Gol Trend - #OT-493</strong>
+              <span class="block text-[11px] text-slate-400">Escáner Check Engine & Inyección</span>
+            </div>
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-lime-500/20 text-lime-400">Listo p/ Entrega</span>
+          </div>
+        </div>
+
+        <div class="pt-2 flex gap-2">
+          <button type="button" class="close-auth-modal flex-1 py-2.5 rounded-lg bg-brand-lime text-slate-950 font-bold text-xs">
+            Continuar en el Sistema
+          </button>
+          <button type="button" onclick="document.getElementById('portal-dashboard-preview').classList.add('hidden'); document.getElementById('auth-form').classList.remove('hidden');" class="px-4 py-2.5 rounded-lg bg-slate-800 text-slate-300 hover:text-white text-xs font-semibold">
+            Cerrar Sesión
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- H. BOTÓN FLOTANTE PERMANENTE DE WHATSAPP -->
+  <!-- ========================================================================= -->
+  <div class="fixed bottom-6 right-6 z-40 group">
+    <!-- Tooltip Flotante -->
+    <div class="hidden sm:block absolute bottom-full right-0 mb-3 w-56 p-3 rounded-xl bg-slate-900 border border-slate-700 shadow-2xl text-xs text-slate-200 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none duration-300">
+      <div class="flex items-center gap-2 mb-1">
+        <span class="w-2 h-2 rounded-full bg-whatsapp animate-ping"></span>
+        <strong class="text-white">Mecánica Espinosa</strong>
+      </div>
+      <p class="text-[11px] text-slate-300">¿Necesitás un presupuesto o auxilio rápido? Escribinos por WhatsApp.</p>
+    </div>
+
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/5493804123456?text=Hola%20Mec%C3%A1nica%20Integral%20Espinosa!%20Quisiera%20hacerles%20una%20consulta." target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-whatsapp hover:bg-whatsapp-hover text-slate-950 shadow-2xl shadow-whatsapp/50 transition-all transform hover:scale-110 focus:outline-none" aria-label="Contactar por WhatsApp">
+      <i class="fa-brands fa-whatsapp text-3xl sm:text-4xl"></i>
+    </a>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
